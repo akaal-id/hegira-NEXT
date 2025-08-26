@@ -1,3 +1,3 @@
-import OtpInputPage from '../OtpInputPage';
+import OtpInputPage from './OtpInputPage';
 
 export default OtpInputPage;

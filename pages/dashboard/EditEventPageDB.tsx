@@ -4,7 +4,7 @@
 */
 import React, { useState, useEffect } from 'react';
 import { EventData } from '../../HegiraApp';
-import { DashboardViewId } from '../../pages/DashboardPage';
+import { DashboardViewId } from './DashboardPage';
 import { Save, Image as ImageIcon, Info, Calendar, ClockIcon, MapPinIcon, FileTextIcon, UserCircle2, Link as LinkIconLucide, ArrowLeft, Bold, Italic, Underline, UploadCloud, PhoneIcon } from 'lucide-react'; // Added ArrowLeft and text formatting icons, UploadCloud
 
 interface EditEventPageDBProps {

@@ -4,8 +4,8 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 import React, { useState } from 'react';
-import Logo from '../components/Logo';
-import { UserRole, AuthRoleType, mapAuthRoleToUserRole } from '../HegiraApp'; 
+import Logo from '../../components/Logo';
+import { UserRole, AuthRoleType, mapAuthRoleToUserRole } from '../../HegiraApp'; 
 import { Eye, EyeOff, Mail, Lock, X } from 'lucide-react';
 
 interface LoginPageProps {

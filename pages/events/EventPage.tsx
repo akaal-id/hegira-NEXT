@@ -3,9 +3,9 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 import React, { useState, useMemo } from 'react';
-import EventCard from '../components/EventCard';
+import EventCard from '../../components/EventCard';
 import { Search, ChevronLeft, ChevronRight, Filter as FilterIcon, ChevronDown, ChevronUp } from 'lucide-react'; 
-import { EventData, PageName } from '../HegiraApp'; // Renamed import
+import { EventData, PageName } from '../../HegiraApp'; // Renamed import
 
 interface EventPageProps {
   events?: EventData[]; 

@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 import React, { useState, useEffect, useRef } from 'react';
-import { CreatorAccountData } from '../DashboardPage';
+import { CreatorAccountData } from './DashboardPage';
 import ConfirmationModal from '../../components/ConfirmationModal';
 import { UserCircle, Mail, Phone, Users, Calendar, Edit2, Save, CheckCircle, Info, Camera, UploadCloud, Eye, EyeOff, Lock, ShieldCheck } from 'lucide-react';
 

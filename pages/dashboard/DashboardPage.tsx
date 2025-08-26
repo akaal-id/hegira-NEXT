@@ -3,23 +3,23 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 import React, { useState, useMemo, useEffect } from 'react';
-import { UserRole, PageName, EventData, TicketCategory } from '../HegiraApp'; 
+import { UserRole, PageName, EventData, TicketCategory } from '../../HegiraApp'; 
 import { Bookmark, Ticket as TicketIconLucide, BarChart2, Settings, PlusCircle, LogOut, LayoutDashboard, Edit3, Users, Info, FileText, UserCircle, ClipboardList, Briefcase, ArrowLeft, ShoppingCart, Search as SearchIcon, UserCog, DollarSign as DollarSignIcon } from 'lucide-react'; 
-import EventCard from '../components/EventCard';
-import EventListPageDB from './dashboard/EventListPageDB'; 
-import CreateEventPageDB from './dashboard/CreateEventPageDB'; 
-import EditEventPageDB from './dashboard/EditEventPageDB'; 
-import EventDetailPageDB from './dashboard/EventDetailPageDB'; 
-import TicketManagementPage from './dashboard/TicketManagementPage'; // New
-import CouponManagementPage from './dashboard/CouponManagementPage'; // New
-import PesananDB from './dashboard/PesananDB'; 
-import PengunjungDB from './dashboard/PengunjungDB'; 
-import AccountInfoDB from './dashboard/AccountInfoDB'; 
-import DashboardLayout from '../components/dashboard/DashboardLayout'; 
-import EventSelectorCardDB from '../components/dashboard/EventSelectorCardDB';
+import EventCard from '../../components/EventCard';
+import EventListPageDB from './EventListPageDB'; 
+import CreateEventPageDB from './CreateEventPageDB'; 
+import EditEventPageDB from './EditEventPageDB'; 
+import EventDetailPageDB from './EventDetailPageDB'; 
+import TicketManagementPage from './TicketManagementPage'; // New
+import CouponManagementPage from './CouponManagementPage'; // New
+import PesananDB from './PesananDB'; 
+import PengunjungDB from './PengunjungDB'; 
+import AccountInfoDB from './AccountInfoDB'; 
+import DashboardLayout from '../../components/dashboard/DashboardLayout'; 
+import EventSelectorCardDB from '../../components/dashboard/EventSelectorCardDB';
 import { ChevronLeft, ChevronRight } from 'lucide-react'; 
-import ManajemenCrewPageDB from './dashboard/ManajemenCrewPageDB';
-import PendapatanDB from './dashboard/PendapatanDB'; 
+import ManajemenCrewPageDB from './ManajemenCrewPageDB';
+import PendapatanDB from './PendapatanDB'; 
 
 const sampleSavedEvents: EventData[] = [ 
   {

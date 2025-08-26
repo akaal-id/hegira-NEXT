@@ -4,13 +4,13 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 import React, { useEffect, useRef } from 'react';
-import HeroSlider from '../components/HeroSlider';
-import EventCard from '../components/EventCard';
-import FeatureItem from '../components/FeatureItem'; 
-import ArticleCard from '../components/ArticleCard'; 
-import BusinessMatchingCard, { BusinessMatchingCardData } from '../components/BusinessMatchingCard';
+import HeroSlider from '../../components/HeroSlider';
+import EventCard from '../../components/EventCard';
+import FeatureItem from '../../components/FeatureItem'; 
+import ArticleCard from '../../components/ArticleCard'; 
+import BusinessMatchingCard, { BusinessMatchingCardData } from '../../components/BusinessMatchingCard';
 import { Briefcase, Users, Mail, TrendingUp, Zap, Ticket as TicketIconLucide, BookOpen, Edit3, Users2, BarChart3, PlusCircle, CalendarPlus, Settings, Lightbulb, ShieldCheck, Search, CalendarCheck } from 'lucide-react'; 
-import { PageName, EventData } from '../HegiraApp'; 
+import { PageName, EventData } from '../../HegiraApp'; 
 
 const sampleArticles = [
   {

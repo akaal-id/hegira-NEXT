@@ -3,8 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 import React, { useEffect, useRef } from 'react';
-import { PageName, UserRole } from '../HegiraApp';
-import FeatureItem from '../components/FeatureItem'; 
+import { PageName, UserRole } from '../../HegiraApp';
+import FeatureItem from '../../components/FeatureItem'; 
 import { Briefcase, Users, Ticket as TicketIconLucide, Award, BarChart3, Edit3, ShieldCheck, Zap, Lightbulb, Users2, CalendarPlus, Settings, CheckCircle } from 'lucide-react';
 
 interface PortfolioCardProps {

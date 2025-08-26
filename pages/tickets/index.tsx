@@ -1,3 +1,3 @@
-import TicketDisplayPage from '../TicketDisplayPage';
+import TicketDisplayPage from './TicketDisplayPage';
 
 export default TicketDisplayPage;

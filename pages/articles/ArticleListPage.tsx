@@ -4,9 +4,9 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 import React, { useState, useMemo, useEffect } from 'react';
-import ArticleCard from '../components/ArticleCard';
+import ArticleCard from '../../components/ArticleCard';
 import { Search, ChevronLeft, ChevronRight, Filter as FilterIcon, ChevronDown, ChevronUp, BookOpen, SlidersHorizontal } from 'lucide-react';
-import { PageName } from '../HegiraApp';
+import { PageName } from '../../HegiraApp';
 
 export interface ArticleData {
   slug: string;

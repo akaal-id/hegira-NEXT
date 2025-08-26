@@ -1,3 +1,3 @@
-import BusinessMatchingPage from '../BusinessMatchingPage';
+import BusinessMatchingPage from './BusinessMatchingPage';
 
 export default BusinessMatchingPage;

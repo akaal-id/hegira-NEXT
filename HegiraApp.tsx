@@ -5,28 +5,28 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Navbar from './components/Navbar';
-import LandingPage from './pages/LandingPage';
-import EventPage from './pages/EventPage';
-import BusinessMatchingPage from './pages/BusinessMatchingPage';
-import HelpPage from './pages/HelpPage';
+import LandingPage from './pages/landing/LandingPage';
+import EventPage from './pages/events/EventPage';
+import BusinessMatchingPage from './pages/business-matching/BusinessMatchingPage';
+import HelpPage from './pages/help/HelpPage';
 import Footer from './components/Footer';
-import LoginPage from './pages/LoginPage';
-import SignupPage from './pages/SignupPage';
-import DashboardPage, { DashboardViewId as DashboardViewIdCreatorVisitor } from './pages/DashboardPage'; // Renamed import
+import LoginPage from './pages/auth/LoginPage';
+import SignupPage from './pages/auth/SignupPage';
+import DashboardPage, { DashboardViewId as DashboardViewIdCreatorVisitor } from './pages/dashboard/DashboardPage'; // Renamed import
 import BusinessMatchingDashboardPage, { DashboardViewIdBM } from './pages/dashboard-bm/BusinessMatchingDashboardPage'; // New BM Dashboard
-import EventDetailPage from './pages/EventDetailPage';
-import CheckoutPage from './pages/CheckoutPage';
-import PaymentLoadingPage from './pages/PaymentLoadingPage';
-import TransactionSuccessPage from './pages/TransactionSuccessPage';
-import TicketDisplayPage from './pages/TicketDisplayPage';
-import CreateEventInfoPage from './pages/CreateEventInfoPage';
-import ArticleListPage from './pages/ArticleListPage';
+import EventDetailPage from './pages/events/EventDetailPage';
+import CheckoutPage from './pages/checkout/CheckoutPage';
+import PaymentLoadingPage from './pages/checkout/PaymentLoadingPage';
+import TransactionSuccessPage from './pages/checkout/TransactionSuccessPage';
+import TicketDisplayPage from './pages/tickets/TicketDisplayPage';
+import CreateEventInfoPage from './pages/landing/CreateEventInfoPage';
+import ArticleListPage from './pages/articles/ArticleListPage';
 import ConfirmationModal from './components/ConfirmationModal';
 import SubscriptionModal from './components/SubscriptionModal';
 import FloatingHelpButton from './components/FloatingHelpButton';
 import AuthSelectionModal from './components/auth/AuthSelectionModal';
-import CreatorAuthPage from './pages/CreatorAuthPage';
-import OtpInputPage from './pages/OtpInputPage';
+import CreatorAuthPage from './pages/auth/CreatorAuthPage';
+import OtpInputPage from './pages/auth/OtpInputPage';
 import OtpInputModal from './components/OtpInputModal'; // New OTP Modal
 import Home from './Home';
 import FullScreenLoader from './components/FullScreenLoader';

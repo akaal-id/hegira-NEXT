@@ -3,8 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 import React, { useState } from 'react';
-import { TransactionData, PageName } from '../HegiraApp'; // Renamed import
-import PrintableTicket from '../components/PrintableTicket'; // New import
+import { TransactionData, PageName } from '../../HegiraApp'; // Renamed import
+import PrintableTicket from '../../components/PrintableTicket'; // New import
 import { Download, ArrowLeft, Loader2 } from 'lucide-react';
 import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';

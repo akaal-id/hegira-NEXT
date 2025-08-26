@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
-import CreateEventInfoPage from '../../CreateEventInfoPage';
+import CreateEventInfoPage from '../../landing/CreateEventInfoPage';
 import type { EventData, PageName, UserRole } from '../../../HegiraApp';
 
 const EventEditWrapper: React.FC = () => {

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
-import EventDetailPage from '../EventDetailPage';
+import EventDetailPage from './EventDetailPage';
 import type { EventData, PageName, CheckoutInfo } from '../../HegiraApp';
 
 const EventDetailWrapper: React.FC = () => {

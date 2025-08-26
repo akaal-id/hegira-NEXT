@@ -1,3 +1,3 @@
-import TransactionSuccessPage from '../TransactionSuccessPage';
+import TransactionSuccessPage from '../checkout/TransactionSuccessPage';
 
 export default TransactionSuccessPage;

@@ -3,12 +3,12 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 import React, { useState, useMemo, useEffect, useCallback } from 'react';
-import BusinessMatchingCard, { BusinessMatchingCardData } from '../components/BusinessMatchingCard';
-import VendorMap from '../components/business/VendorMap';
-import MeetingSchedulerModal from '../components/business/MeetingSchedulerModal';
+import BusinessMatchingCard, { BusinessMatchingCardData } from '../../components/BusinessMatchingCard';
+import VendorMap from '../../components/business/VendorMap';
+import MeetingSchedulerModal from '../../components/business/MeetingSchedulerModal';
 import { Search, ChevronLeft, ChevronRight, SlidersHorizontal, RotateCcw, MapPin as LocationIcon, Briefcase, Users, Award, Star, Filter, X } from 'lucide-react';
-import { PageName } from '../HegiraApp';
-import Logo from '../components/Logo'; 
+import { PageName } from '../../HegiraApp';
+import Logo from '../../components/Logo'; 
 
 const sampleVendors: BusinessMatchingCardData[] = [
   { id: 1, logoUrl: 'https://picsum.photos/seed/logo1/100/100', name: 'PT Inovasi Digital Nusantara', matchScore: 4.5, sector: 'Teknologi Informasi', location: 'Jakarta Selatan, DKI Jakarta', budget: 'Rp 50M - Rp 100M', lat: -6.2607, lng: 106.8100, isOnline: true, specialFeatures: ['Verified', 'Respon Cepat'], description: "Perusahaan terdepan dalam solusi AI dan Big Data, membantu transformasi digital bisnis Anda.", keyMetrics: [{label:"Proyek Selesai", value:"120+"}, {label:"Klien Puas", value:"98%"}, {label:"Tahun Pengalaman", value:"8"}], portfolio: [{title: "Sistem ERP Cerdas", description:"Implementasi ERP berbasis AI untuk efisiensi operasional.", imageUrl:"https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=60"}], reviews: [{author:"Budi Corp", rating:5, comment:"Solusi AI mereka sangat membantu!", date:"2024-07-01"}], contact:{email:"sales@inovasidigital.com", phone:"+6221500123"}},

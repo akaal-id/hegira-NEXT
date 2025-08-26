@@ -3,9 +3,9 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
-import { EventData, PageName, SelectedTicket, TicketCategory, CheckoutInfo, formatEventTime, formatDisplayDate } from '../HegiraApp'; // Renamed import
-import Breadcrumbs from '../components/Breadcrumbs'; // New
-import TermsAndConditionsModal from '../components/TermsAndConditionsModal'; // New
+import { EventData, PageName, SelectedTicket, TicketCategory, CheckoutInfo, formatEventTime, formatDisplayDate } from '../../HegiraApp'; // Renamed import
+import Breadcrumbs from '../../components/Breadcrumbs'; // New
+import TermsAndConditionsModal from '../../components/TermsAndConditionsModal'; // New
 import { Share2, Link as LinkIcon, MapPin, CalendarDays, Clock, Users, ParkingCircle, Info, Ticket, ShoppingCart, Minus, Plus, Instagram, Facebook, Twitter, Linkedin, MessageCircle as WhatsAppIcon, ChevronDown, ChevronUp, CheckCircle, Award, Phone, Mail as MailIcon, Briefcase } from 'lucide-react';
 
 // Helper function to format currency

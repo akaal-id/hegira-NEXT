@@ -9,7 +9,7 @@ import CouponItemCardDB, { CouponData } from '../../components/dashboard/CouponI
 import AddTicketModal from '../../components/dashboard/modals/AddTicketModal'; 
 import AddCouponModal from '../../components/dashboard/modals/AddCouponModal'; 
 import { PlusCircle, Search, ChevronLeft, ChevronRight as ChevronRightIcon, ArrowLeft, Info } from 'lucide-react';
-import { DashboardViewId } from '../DashboardPage'; 
+import { DashboardViewId } from './DashboardPage'; 
 
 interface TiketKuponDBProps {
   allEvents: EventData[]; 

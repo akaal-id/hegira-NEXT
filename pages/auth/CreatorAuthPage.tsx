@@ -3,8 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 import React, { useState, useEffect, useRef } from 'react';
-import { PageName } from '../HegiraApp';
-import Logo from '../components/Logo';
+import { PageName } from '../../HegiraApp';
+import Logo from '../../components/Logo';
 // RoleTabs import removed
 import { Eye, EyeOff, Mail, Lock, User, Briefcase, ArrowLeft, CheckCircle, BarChart3, Users as UsersIcon, Server, BrainCircuit, LogIn, Calendar } from 'lucide-react';
 

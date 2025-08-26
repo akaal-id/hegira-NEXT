@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 import React from 'react';
-import Logo from '../components/Logo';
+import Logo from '../../components/Logo';
 import { MailCheck, X } from 'lucide-react';
 
 interface VerificationPageProps {

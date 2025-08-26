@@ -4,7 +4,7 @@
 */
 import React, { useState, useEffect } from 'react';
 import { EventData } from '../../HegiraApp';
-import { DashboardViewId } from '../../pages/DashboardPage';
+import { DashboardViewId } from './DashboardPage';
 import { Save, PlusCircle, Trash2, Image as ImageIcon, Info, Calendar, ClockIcon, MapPinIcon, DollarSignIcon, UsersIcon, ParkingCircleIcon, FileTextIcon, ShieldCheckIcon, TagIcon, BriefcaseIcon, XCircle, Link as LinkIconLucide, PhoneIcon, MailIcon, UserCircle2, Bold, Italic, Underline, UploadCloud, ArrowLeft } from 'lucide-react'; // Added ArrowLeft
 
 interface CreateEventPageDBProps {

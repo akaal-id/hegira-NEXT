@@ -9,7 +9,7 @@ import DashboardSidebarNav, { SidebarSection } from './DashboardSidebarNav';
 import DashboardFooter from './DashboardFooter';
 import { PageName, UserRole, EventData } from '../../HegiraApp'; 
 import { Menu } from 'lucide-react';
-import { DashboardViewId as CreatorVisitorViewId } from '../../pages/DashboardPage'; 
+import { DashboardViewId as CreatorVisitorViewId } from '../../pages/dashboard/DashboardPage'; 
 import { DashboardViewIdBM } from '../../pages/dashboard-bm/BusinessMatchingDashboardPage';
 
 export type CombinedDashboardViewId = CreatorVisitorViewId | DashboardViewIdBM | string; // Allow string for broader compatibility if needed

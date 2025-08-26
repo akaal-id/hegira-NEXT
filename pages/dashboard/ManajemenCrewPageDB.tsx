@@ -4,7 +4,7 @@
 */
 import React, { useState, useMemo, useEffect } from 'react';
 import { EventData } from '../../HegiraApp';
-import { DashboardViewId } from '../DashboardPage';
+import { DashboardViewId } from './DashboardPage';
 import { Users, Search, ChevronLeft, ChevronRight as ChevronRightIcon, PlusCircle, ScanLine, Edit3, BarChartHorizontalBig, QrCode, Info, Trash2, ArrowLeft } from 'lucide-react';
 import CrewIDCardModal from '../../components/dashboard/modals/CrewIDCardModal';
 import SingleCrewBarcodeModal from '../../components/dashboard/modals/SingleCrewBarcodeModal';

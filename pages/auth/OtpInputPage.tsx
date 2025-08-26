@@ -3,9 +3,9 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 import React, { useState, useRef, useEffect, KeyboardEvent } from 'react';
-import Logo from '../components/Logo';
+import Logo from '../../components/Logo';
 import { KeyRound, RefreshCcw, Edit, Mail, X, Loader2 } from 'lucide-react';
-import { PageName } from '../HegiraApp'; 
+import { PageName } from '../../HegiraApp'; 
 
 interface OtpInputPageProps {
   email: string;

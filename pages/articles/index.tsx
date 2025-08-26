@@ -1,3 +1,3 @@
-import ArticleListPage from '../ArticleListPage';
+import ArticleListPage from './ArticleListPage';
 
 export default ArticleListPage;

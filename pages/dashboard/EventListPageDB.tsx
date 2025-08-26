@@ -8,7 +8,7 @@ import { PlusCircle, Search, ChevronDown, ArrowRight, ChevronLeft, ChevronRight 
 import { PageName, EventData, formatEventTime } from '../../HegiraApp'; 
 import EventCardDB from '../../components/dashboard/EventCardDB';
 // EventDetailModalDB is removed as it's now a full page: EventDetailPageDB
-import { DashboardViewId } from '../../pages/DashboardPage'; 
+import { DashboardViewId } from './DashboardPage'; 
 
 export type AugmentedEventData = EventData; 
 

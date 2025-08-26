@@ -4,7 +4,7 @@
 */
 import React, { useState, useEffect } from 'react';
 import { PageName, EventData, formatEventTime, formatDisplayDate } from '../../HegiraApp';
-import { DashboardViewId } from '../../pages/DashboardPage';
+import { DashboardViewId } from './DashboardPage';
 import { X, Edit, Power, PowerOff, CheckCircle, ChevronDown, ChevronUp, Link as LinkIcon, Upload, Eye, ArrowLeft } from 'lucide-react';
 
 interface EventDetailPageDBProps {

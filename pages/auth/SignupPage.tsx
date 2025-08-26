@@ -3,8 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 import React, { useState } from 'react';
-import { AuthRoleType } from '../HegiraApp';
-import Logo from '../components/Logo';
+import { AuthRoleType } from '../../HegiraApp';
+import Logo from '../../components/Logo';
 import { Eye, EyeOff, Mail, Lock, User, Briefcase, X } from 'lucide-react'; // Added Briefcase for Organization
 
 interface SignupPageProps {
