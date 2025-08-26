@@ -5,8 +5,11 @@
 */
 import React, { useState, useMemo, useEffect } from 'react';
 import ArticleCard from '../../components/ArticleCard';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+import FloatingHelpButton from '../../components/FloatingHelpButton';
 import { Search, ChevronLeft, ChevronRight, Filter as FilterIcon, ChevronDown, ChevronUp, BookOpen, SlidersHorizontal } from 'lucide-react';
-import { PageName } from '../../HegiraApp';
+import { PageName, UserRole } from '../../HegiraApp';
 
 export interface ArticleData {
   slug: string;
@@ -185,9 +188,34 @@ const ArticleListPage: React.FC<ArticleListPageProps> = ({ onNavigate }) => {
     // Example: onNavigate('articleDetail', { slug });
   };
 
+  // Placeholder functions for Navbar props
+  const handleLogout = () => {
+    // Handle logout logic
+  };
+
+  const handleOpenAuthModal = () => {
+    // Handle auth modal opening
+  };
+
+  const handleOpenRoleSwitchModal = () => {
+    // Handle role switch modal opening
+  };
+
   return (
-    <div className="bg-gray-50 min-h-full">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+    <>
+      <Navbar
+        onNavigate={handleArticleNavigate}
+        currentPage="articlesPage"
+        isLoggedIn={false}
+        userRole={undefined}
+        userName={undefined}
+        onLogout={handleLogout}
+        onOpenAuthModal={handleOpenAuthModal}
+        onOpenRoleSwitchModal={handleOpenRoleSwitchModal}
+      />
+      
+      <div className="pt-20 bg-gray-50 min-h-full">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
         <header className="mb-10 md:mb-16 text-center">
           <BookOpen size={48} className="mx-auto text-hegra-turquoise mb-4" />
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-jakarta text-hegra-navy">
@@ -337,6 +365,9 @@ const ArticleListPage: React.FC<ArticleListPageProps> = ({ onNavigate }) => {
           )}
         </main>
       </div>
+      </div>
+      <Footer onNavigate={onNavigate} currentPage="articlesPage" />
+      <FloatingHelpButton onNavigate={onNavigate} />
        <style>{`
         .animate-fade-in {
           animation: fadeIn 0.5s ease-out forwards;
@@ -346,7 +377,7 @@ const ArticleListPage: React.FC<ArticleListPageProps> = ({ onNavigate }) => {
           to { opacity: 1; transform: translateY(0); }
         }
       `}</style>
-    </div>
+    </>
   );
 };
 

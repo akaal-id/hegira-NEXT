@@ -16,7 +16,9 @@ module.exports = {
         'hegra-deep-navy': '#18093b',
         'hegra-turquoise': '#4b998e',
         'hegra-yellow': '#ebaf4c',
-        'hegra-chino': '#d0cea9'
+        'hegra-chino': '#d0cea9',
+        'hegra-white': '#feffff',
+        'hegra-navy': '#18093b'
       }
     },
   },

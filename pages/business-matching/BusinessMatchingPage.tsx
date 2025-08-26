@@ -6,8 +6,11 @@ import React, { useState, useMemo, useEffect, useCallback } from 'react';
 import BusinessMatchingCard, { BusinessMatchingCardData } from '../../components/BusinessMatchingCard';
 import VendorMap from '../../components/business/VendorMap';
 import MeetingSchedulerModal from '../../components/business/MeetingSchedulerModal';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+import FloatingHelpButton from '../../components/FloatingHelpButton';
 import { Search, ChevronLeft, ChevronRight, SlidersHorizontal, RotateCcw, MapPin as LocationIcon, Briefcase, Users, Award, Star, Filter, X } from 'lucide-react';
-import { PageName } from '../../HegiraApp';
+import { PageName, UserRole } from '../../HegiraApp';
 import Logo from '../../components/Logo'; 
 
 const sampleVendors: BusinessMatchingCardData[] = [
@@ -33,7 +36,7 @@ const specialFeaturesOptions = ["Verified", "Respon Cepat", "Portofolio Kuat", "
 
 
 interface BusinessMatchingPageProps {
-  onNavigate: (page: PageName, data?: any) => void;
+  onNavigate?: (page: PageName, data?: any) => void;
 }
 
 const BusinessMatchingPage: React.FC<BusinessMatchingPageProps> = ({ onNavigate }) => {
@@ -51,6 +54,42 @@ const BusinessMatchingPage: React.FC<BusinessMatchingPageProps> = ({ onNavigate 
   const [mapZoom, setMapZoom] = useState(5); // Default zoom
   const [activeVendorIdOnMap, setActiveVendorIdOnMap] = useState<number | null>(null);
   const [isMobileFilterOpen, setIsMobileFilterOpen] = useState(false);
+
+  // Default values for standalone mode
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [userRole, setUserRole] = useState<UserRole>('visitor');
+  const [userName, setUserName] = useState('Pengunjung');
+  const [currentPageName, setCurrentPageName] = useState<PageName>('business');
+
+  // Handle navigation for standalone mode
+  const handleNavigate = (page: PageName, data?: any) => {
+    if (onNavigate) {
+      onNavigate(page, data);
+    } else {
+      // For standalone mode, handle basic navigation
+      if (page === 'landing') {
+        window.location.href = '/';
+      } else if (page === 'dashboard') {
+        window.location.href = '/';
+      }
+    }
+  };
+
+  const handleLogout = () => {
+    setIsLoggedIn(false);
+    setUserRole('visitor');
+    setUserName('Pengunjung');
+  };
+
+  const handleOpenAuthModal = () => {
+    // For standalone mode, redirect to main page
+    window.location.href = '/';
+  };
+
+  const handleOpenRoleSwitchModal = () => {
+    // For standalone mode, redirect to main page
+    window.location.href = '/';
+  };
 
   const resetFilters = () => {
     setSearchTerm('');
@@ -205,16 +244,17 @@ const BusinessMatchingPage: React.FC<BusinessMatchingPageProps> = ({ onNavigate 
 
   return (
     <div className="bg-gray-50 min-h-screen">
-      {/* Hero Banner */}
-      <div className="w-full bg-gradient-to-r from-hegra-turquoise/10 via-hegra-yellow/10 to-hegra-turquoise/10 relative" style={{ paddingTop: '37.5%' /* 16:6 aspect ratio */ }}>
-        {/* Placeholder for a background image or content */}
-        {/* <img src="/placeholder-banner.jpg" alt="Business Matching Banner" className="absolute inset-0 w-full h-full object-cover opacity-80"/> */}
-        <div className="absolute inset-0 flex items-center justify-center">
-          {/* <h1 className="text-4xl font-bold text-white text-shadow-lg">Connect & Grow</h1> */}
-        </div>
-      </div>
-
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+             <Navbar 
+         onNavigate={handleNavigate} 
+         currentPage={currentPageName}
+         isLoggedIn={isLoggedIn} 
+         userRole={userRole} 
+         userName={userName} 
+         onLogout={handleLogout} 
+         onOpenAuthModal={handleOpenAuthModal} 
+         onOpenRoleSwitchModal={handleOpenRoleSwitchModal} 
+       />
+             <main className="pt-20 container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
         <header className="mb-6 md:mb-8 text-center lg:text-left flex flex-col lg:flex-row justify-between items-center">
           <div>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold font-jakarta text-hegra-deep-navy">
@@ -273,7 +313,9 @@ const BusinessMatchingPage: React.FC<BusinessMatchingPageProps> = ({ onNavigate 
             )}
           </main>
         </div>
-      </div>
+      </main>
+             <Footer onNavigate={handleNavigate} currentPage={currentPageName} />
+       <FloatingHelpButton onNavigate={handleNavigate} />
 
       {/* Mobile Filter Sidebar */}
       {isMobileFilterOpen && (
